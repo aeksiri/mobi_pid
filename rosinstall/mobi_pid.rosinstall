@@ -1,0 +1,4 @@
+- git:
+    local-name: mobi_pid
+    uri: 'https://github.com/aeksiri/mobi_pid.git
+    version: kinetic
