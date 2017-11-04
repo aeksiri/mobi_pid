@@ -1,0 +1,19 @@
+<package format="2">
+    <name>mobi_pid</name>
+    <version>0.0.1</version>
+    <description>mobi_robot PID dynamic_reconfigure</description>
+    <author>Akkharaphong EKSIRI</author>
+    <maintainer email="akkharaphong.e@bu.ac.th">Akkharaphong EKSIRI</maintainer>
+    <license>BSD</license>
+    <url>https://github.com/aeksiri/mobi_pid</url>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <build_depend>message_generation</build_depend>
+    <exec_depend>message_runtime</exec_depend>
+
+    <depend>dynamic_reconfigure</depend>
+    <depend>roscpp</depend>
+    <depend>rospy</depend>
+    <depend>std_msgs</depend>
+    <depend>mobi_msgs</depend>
+</package>
