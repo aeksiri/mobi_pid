@@ -6,11 +6,11 @@ int main(int argc, char **argv)
   ros::init(argc, argv, "pid_configure");
   ros::NodeHandle nh;
 
-  mobiPID *mobi_pid = new mobiPID();
+  MobiPID *mobi_pid = new MobiPID();
 
   dynamic_reconfigure::Server<mobi_pid::mobiPIDConfig> dr_srv;
   dynamic_reconfigure::Server<mobi_pid::mobiPIDConfig>::CallbackType cb;
-  cb = boost::bind(&mobiPID::configCallback, mobi_pid, _1, _2);
+  cb = boost::bind(&MobiPID::configCallback, mobi_pid, _1, _2);
   dr_srv.setCallback(cb);
 
   double p;

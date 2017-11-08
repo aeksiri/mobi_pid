@@ -12,7 +12,7 @@
 // Auto-generated from cfg/ directory.
 #include <mobi_pid/mobiPIDConfig.h>
 
-class mobiPID
+class MobiPID
 {
 public:
   MobiPID();

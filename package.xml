@@ -2,7 +2,7 @@
     <name>mobi_pid</name>
     <version>0.0.1</version>
     <description>mobi_robot PID dynamic_reconfigure</description>
-    <author>Akkharaphong EKSIRI</author>
+    <author>Juan Jimeno</author>
     <maintainer email="akkharaphong.e@bu.ac.th">Akkharaphong EKSIRI</maintainer>
     <license>BSD</license>
     <url>https://github.com/aeksiri/mobi_pid</url>

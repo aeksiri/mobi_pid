@@ -1,14 +1,14 @@
 #include "mobi_pid/mobi_pid_core.h"
 
-mobiPID::mobiPID()
+MobiPID::MobiPID()
 {
 }
 
-mobiPID::~mobiPID()
+MobiPID::~MobiPID()
 {
 }
 
-void mobiPID::publishMessage(ros::Publisher *pub_message)
+void MobiPID::publishMessage(ros::Publisher *pub_message)
 {
   mobi_msgs::PID msg;
   msg.p = p_;
@@ -17,7 +17,7 @@ void mobiPID::publishMessage(ros::Publisher *pub_message)
   pub_message->publish(msg);
 }
 
-void mobiPID::messageCallback(const mobi_msgs::PID::ConstPtr &msg)
+void MobiPID::messageCallback(const mobi_msgs::PID::ConstPtr &msg)
 {
   p_ = msg->p;
   d_ = msg->d;
@@ -29,7 +29,7 @@ void mobiPID::messageCallback(const mobi_msgs::PID::ConstPtr &msg)
   ROS_INFO("I: %f", i_);
 }
 
-void mobiPID::configCallback(mobi_pid::mobiPIDConfig &config, double level)
+void MobiPID::configCallback(mobi_pid::mobiPIDConfig &config, double level)
 {
   //for PID GUI
   p_ = config.p;
